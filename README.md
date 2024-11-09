@@ -10,7 +10,12 @@ after executing a shascan in a specified path.
 I recommend you to redirect the error output to /dev/null so you don't get innecessary information about where the scan is being done and only shows 
 the modified files.
 
+**Warning**
+It is recommended to encrypt the hashes' file or atleast restrict the access to it.
+
 # TODO
 I am looking forward to use xxd to do a hexadecimal volc to binary using the "xxd" linux tool with the options -r and -p, so this would reduce the 40 bytes of SHA1
-sum outputed in string format to 20 bytes which is the actual size of a SHA1 hash in byte format.
+sum outputed in string format to 20 bytes which is the actual size of a SHA1 hash in byte format. The final idea of the project is to be able to use the file system
+optimization that uses Block-Level Compression, so the final file would not be that heavy.
+
 
